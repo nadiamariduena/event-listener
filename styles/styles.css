@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: goldenrod;
+  height: 100%;
+}
+body #page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body header {
+  width: 100vw;
+  height: 6vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header .logo {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body header ul {
+  list-style: none;
+}
+body header ul li {
+  display: inline;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body #top {
+  width: 100vw;
+  height: 94vh;
+  background-color: darkolivegreen;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+body #top .boxOne,
+body #top .boxTwo {
+  width: 50%;
+  height: 100%;
+}
+body #top .boxOne {
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+body #top .boxOne p {
+  text-align: center;
+  width: 50%;
+  line-height: 60px;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 30px;
+}
+body #top .boxOne #blackDot {
+  padding: 10px 26px;
+  background-color: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-decoration: line-through;
+  margin: 30px 30px;
+}
+body #top .boxOne #hiddenBoxi {
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 50%;
+  height: 20%;
+  padding: 10px;
+  margin: 10px 30px;
+  border: 1px solid #000;
+}
+body #top .boxOne #hiddenBoxi #userText {
+  border: 0;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+body #top .boxOne #hiddenBoxi button {
+  background-color: transparent;
+  border: 0;
+  padding: 5px;
+  font-size: 0.8rem;
+  border: 1px solid #000;
+}
+body #top .boxOne #hiddenBoxi ul li {
+  position: relative;
+  transition: 0.5s;
+}
+body #top .boxOne #hiddenBoxi ul li li:nth-child(2n) {
+  background-color: #ffd343;
+}
+body #top .boxOne .close {
+  text-align: end;
+  padding: 15px 20px;
+  margin-left: 6rem;
+  border-radius: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body #top .boxOne .close:hover {
+  color: #000;
+  border: 2px solid #000;
+  background-color: white;
+}
+body #top .boxTwo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #082d50;
+  background-image: url(../img/Raphael-Barontini-metalmagazine-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body #boxOne {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  background-color: white;
+  overflow-y: auto;
+}
+body #boxOne ul li {
+  position: relative;
+  transition: 0.5s;
+}
+body #boxOne ul li li:nth-child(2n) {
+  background-color: #ffd343;
+}
+
+/*# sourceMappingURL=styles.css.map */
