@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: goldenrod;
+  height: 100%;
+
+  //--------------------------
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    width: 100vw;
+    height: 6vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  // -------------------------
+  #top {
+    width: 100vw;
+    height: 94vh;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    .boxOne,
+    .boxTwo {
+      width: 50%;
+      height: 100%;
+    }
+
+    .boxOne {
+      background-color: chocolate;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+
+      p {
+        text-align: center;
+        width: 50%;
+        line-height: 60px;
+        font-size: 5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px 30px;
+      }
+
+      #blackDot {
+        padding: 10px 26px;
+        background-color: #000;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-decoration: line-through;
+        margin: 30px 30px;
+      }
+
+      #hiddenBoxi {
+        display: none;
+
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        width: 50%;
+        height: 20%;
+        padding: 10px;
+        margin: 10px 30px;
+        // background-color: rgb(255, 211, 67); nice yellow
+
+        border: 1px solid #000;
+
+        #userText {
+          border: 0;
+          margin: 5px 0;
+          padding: 5px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+        }
+
+        button {
+          background-color: transparent;
+          border: 0;
+          padding: 5px;
+          font-size: 0.8rem;
+
+          border: 1px solid #000;
+        }
+
+        ul li {
+          position: relative;
+          transition: 0.5s;
+
+          li:nth-child(2n) {
+            background-color: rgb(255, 211, 67);
+          }
+        }
+      }
+
+      .close {
+        text-align: end;
+        padding: 15px 20px;
+
+        margin-left: 6rem;
+        border-radius: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          color: #000;
+
+          border: 2px solid #000;
+          background-color: white;
+        }
+      }
+    }
+    .boxTwo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: rgb(8, 45, 80);
+      background-image: url(../img/Raphael-Barontini-metalmagazine-5.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  // -------------------------
+
+  // ---------------------------
+
+  // --------------------------
+  //
+  //
+  //
+
+  #boxOne {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+    background-color: white;
+    overflow-y: auto;
+
+    // -----styles to the Dynamically created list on       javascript
+    ul li {
+      position: relative;
+      transition: 0.5s;
+
+      li:nth-child(2n) {
+        background-color: rgb(255, 211, 67);
+      }
+    }
+  }
+
+  //   this class , was created in javascript to have the possibility to hover on it
+}
